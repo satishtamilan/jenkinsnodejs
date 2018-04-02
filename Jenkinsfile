@@ -6,13 +6,7 @@ node {
    }
    stage('Building the Image') { 
       
-         nodehome=docker.build("satishtamilan/jenkinsnodejsintegration")
-     
-   }
-   stage('Test the Image') { 
-      
-        nodehome.inside(echo 'Test is passed')
-     
+         nodehome=docker.build("satishtamilan/jenkinsnodejsintegration")  
    }
    stage('Pushing the Image') { 
       
