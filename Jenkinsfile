@@ -10,7 +10,7 @@ node {
    }
    stage('Pushing the Image') { 
       
-      docker.withRegistry('https://hub.docker.com','dockercredentials') 
+      docker.withRegistry('https://registry.hub.docker.com','dockercredentials') 
       {
           nodehome.push("1.0")
       }
