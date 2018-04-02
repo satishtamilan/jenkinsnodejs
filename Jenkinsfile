@@ -16,7 +16,10 @@ node {
    }
    stage('Pushing the Image') { 
       
-      docker.withRegistry('http://hub.docker.com' 'dockercredentials') {app.push(1.0)}
+      docker.withRegistry('http://hub.docker.com' 'dockercredentials') 
+      {
+          app.push(1.0)
+      }
      
    }
    stage('Results') {
