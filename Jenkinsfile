@@ -12,7 +12,7 @@ node {
       
       docker.withRegistry('https://hub.docker.com','dockercredentials') 
       {
-          app.push(1.0)
+          nodehome.push(1.0)
       }
      
    }
